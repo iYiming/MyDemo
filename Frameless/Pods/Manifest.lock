@@ -1,0 +1,14 @@
+PODS:
+  - Onboard (1.1)
+
+DEPENDENCIES:
+  - Onboard (from `https://github.com/mamaral/Onboard.git`)
+
+EXTERNAL SOURCES:
+  Onboard:
+    :git: https://github.com/mamaral/Onboard.git
+
+SPEC CHECKSUMS:
+  Onboard: 40270e520b6df51e90de7fe0d57eb54057dc22d9
+
+COCOAPODS: 0.34.4
