@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VLP-Gb-f37">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="ZI6-E3-2EM">
+            <objects>
+                <viewController id="fwV-as-dTr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="POQ-yz-t5o"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Dk-3v-gnM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dPB-sW-j2K">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="ZwD-5h-Ch2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSd-xB-tWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="112"/>
+        </scene>
+        <!--登录控制器-->
+        <scene sceneID="9F3-oa-UId">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="ocP-LR-g3W" customClass="LoginViewController" customModule="LoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sRU-x7-fOM"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Ks-R4-GkA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bjc-5A-CqS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHf-Pf-NVv">
+                                <rect key="frame" x="250" y="275" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="RqE-fC-xoz"/>
+                                    <constraint firstAttribute="height" constant="50" id="Uq5-Pi-WpR"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="ocP-LR-g3W" eventType="touchUpInside" id="KBY-SJ-bbV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82455283717105265" green="0.62682462993421051" blue="0.26690995065789475" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="OHf-Pf-NVv" secondAttribute="centerX" id="00h-IN-jF0"/>
+                            <constraint firstAttribute="centerY" secondItem="OHf-Pf-NVv" secondAttribute="centerY" id="Yxp-jO-Xv1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录控制器" id="bYl-P1-aJc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIE-Ku-9XA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="429" y="1018"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="D8R-bI-acT">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="9CU-z3-rhI" customClass="FirstViewController" customModule="LoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VND-qf-ai6"/>
+                        <viewControllerLayoutGuide type="bottom" id="I0s-RV-rTh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xoe-Zg-wUn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GzF-Vc-ENl">
+                                <rect key="frame" x="275.5" y="284.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="9CU-z3-rhI" eventType="valueChanged" id="Rb4-q4-Mdl"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55294117647058827" green="0.69803921568627447" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="GzF-Vc-ENl" secondAttribute="centerY" id="GHY-Vn-mnu"/>
+                            <constraint firstAttribute="centerX" secondItem="GzF-Vc-ENl" secondAttribute="centerX" id="yRz-Aa-LiB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="DZX-ac-HWW"/>
+                    <connections>
+                        <outlet property="switchControl" destination="GzF-Vc-ENl" id="RVd-r6-av6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Pk-a7-yvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="-550"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Xqx-NW-xnd">
+            <objects>
+                <tabBarController storyboardIdentifier="MyTabBarController" id="VLP-Gb-f37" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="VNT-nT-Qxh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9CU-z3-rhI" kind="relationship" relationship="viewControllers" id="bY5-zq-DDG"/>
+                        <segue destination="fwV-as-dTr" kind="relationship" relationship="viewControllers" id="ryO-Qp-GIe"/>
+                        <segue destination="4Wl-00-Q2J" kind="presentation" identifier="showLoginViewController" animates="NO" id="RZ8-95-xxq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0W-YO-gJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-648" y="-174"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Ny-zQ-S7f">
+            <objects>
+                <navigationController storyboardIdentifier="LoginNavViewController" automaticallyAdjustsScrollViewInsets="NO" id="4Wl-00-Q2J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gho-I3-OSi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ocP-LR-g3W" kind="relationship" relationship="rootViewController" id="YVT-Hd-L1e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOH-Fc-oex" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-648" y="534"/>
+        </scene>
+    </scenes>
+</document>
