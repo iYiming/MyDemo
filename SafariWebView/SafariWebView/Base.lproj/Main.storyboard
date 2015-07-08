@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4p-U7-mlj" userLabel="WebView1">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XBG-Fb-lkZ"/>
+                                </connections>
+                            </webView>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dl9-0A-aDp" userLabel="WebView2">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NqO-km-gtE"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E4p-U7-mlj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BOA-oW-u6L"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E4p-U7-mlj" secondAttribute="bottom" id="NsX-Lq-cGY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dl9-0A-aDp" secondAttribute="bottom" id="Pto-em-XTn"/>
+                            <constraint firstItem="dl9-0A-aDp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X9e-eJ-eBR"/>
+                            <constraint firstAttribute="trailing" secondItem="dl9-0A-aDp" secondAttribute="trailing" id="Zk0-c6-QT5"/>
+                            <constraint firstItem="E4p-U7-mlj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fLg-h7-wjT"/>
+                            <constraint firstItem="dl9-0A-aDp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mSX-pS-JBX"/>
+                            <constraint firstAttribute="trailing" secondItem="E4p-U7-mlj" secondAttribute="trailing" id="s88-4L-wp3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView1" destination="E4p-U7-mlj" id="85W-JU-DUK"/>
+                        <outlet property="webView2" destination="dl9-0A-aDp" id="xBo-Fi-25h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
